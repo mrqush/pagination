@@ -174,7 +174,8 @@
   margin: 3px 0;
 }
 @media only screen and (max-width: 520px) {
-  .pagination__btn a, .pagination__btn span {
+  .pagination__btn a,
+  .pagination__btn span {
     height: 50px;
     padding: 0 15px;
     line-height: 48px;
