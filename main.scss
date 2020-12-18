@@ -10,6 +10,11 @@
         border-radius: 3px;
         height: 36px;
         box-sizing: border-box;
+        @media only screen and (max-width: 520px) {
+            height: 50px;
+            padding: 0 15px;
+            line-height: 48px;
+        }
     }
     &__next_active,
     &__next {
@@ -24,6 +29,11 @@
         position: relative;
         text-align: center;
         text-decoration: none;
+        @media only screen and (max-width: 520px) {
+            height: 50px;
+            padding: 0 15px;
+            line-height: 48px;
+        }
     }
     &__next_active:after,
     &__next:after {
@@ -31,11 +41,14 @@
         display: block;
         position: absolute;
         top: 0px;
-        left: 95%;
+        left: 94%;
         width: 0;
         border-color: transparent transparent transparent #f7f7f8;
         border-style: solid;
         border-width: 17px;
+        @media only screen and (max-width: 520px) {
+            border-width: 24px;
+        }
     }
     &__next_active:before,
     &__next:before {
@@ -48,6 +61,9 @@
         border-color: transparent transparent transparent #e5e5e5;
         border-style: solid;
         border-width: 18px;
+        @media only screen and (max-width: 520px) {
+            border-width: 25px;
+        }
     }
     &__prev_active,
     &__prev {
@@ -77,6 +93,9 @@
         -ms-transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
+        @media only screen and (max-width: 520px) {
+            border-width: 24px;
+        }
     }
     &__prev_active:before,
     &__prev:before {
@@ -92,6 +111,9 @@
         -ms-transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
+        @media only screen and (max-width: 520px) {
+            border-width: 25px;
+        }
     }
     &__prev_active:hover,
     &__next_active:hover {
@@ -130,11 +152,27 @@
         display: inline-block;
         vertical-align: bottom;
         margin: 3px 0;
+        @media only screen and (max-width: 520px) {
+            background-color: transparent;
+            color: #333;
+            border: 0;
+            padding: 0 20px;
+            height: 48px;
+            line-height: 48px;
+            font-weight: 400;
+        }
     }
     &__btn {
         display: inline-block;
         vertical-align: bottom;
         margin: 3px 0;
+        & a, span {
+            @media only screen and (max-width: 520px) {
+                height: 50px;
+                padding: 0 15px;
+                line-height: 48px;
+            }
+        }
     }
     &__item {
         background-color: #f7f7f8;
@@ -155,12 +193,20 @@
             display: inline-block;
             vertical-align: bottom;
             margin: 3px 0;
+            @media only screen and (max-width: 520px) {
+                display: none;
+            }
         }
         &:hover {
             background-color: #f5f5f5;
             border: 1px solid #a5a5a5;
             color: #69696e;
             text-decoration: none;
+        }
+        @media only screen and (max-width: 520px) {
+            height: 50px;
+            padding: 0 15px;
+            line-height: 48px;
         }
     }
 }
